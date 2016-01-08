@@ -1,0 +1,11 @@
+{
+	"name": "SalonEspejos/Mailgun",
+	"description": "Sitio web de Salón Espejos",
+	"license": "MIT",
+	"keywords": [
+		"mail"
+	],
+	"require": {
+		"mailgun/mailgun-php": "1.7.*"
+	}
+}
