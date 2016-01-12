@@ -50,6 +50,7 @@ ul, figure {
 body #header-main {
 	color: #fff;
 	background-image: url("../img/salon espejos.png");
+	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 570px;
 }
@@ -106,6 +107,35 @@ body #header-main h1 p {
 	margin: 0;
 	font-weight: 300;
 	font-size: 1.4em;
+}
+body #header-main #container-buttons-header {
+	text-align: center;
+	margin-top: 3em;
+}
+body #header-main #discover-glamour {
+	background: transparent;
+	border: 3px solid #fff;
+	color: #fff;
+	display: inline-block;
+	font-weight: 700;
+	padding: 1em 2em;
+	text-decoration: none;
+	font-size: 1em;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+body #header-main #discover-glamour:hover {
+	background: #FFF;
+	color: #FF5722;
+}
+body #header-main #arrive-living-room {
+	border-bottom: 1px solid;
+	color: beige;
+	display: inline-block;
+	font-size: 1.1em;
+	padding: 0.2em 0;
+	text-decoration: none;
 }
 body #section {
 	background: #F5F5DC;
@@ -245,7 +275,7 @@ body #section {
 		padding: 4em 0;
 	}
 		section#location > div {
-			width: 60%;
+			width: 65%;
 			display: inline-block;
 		}
 		section#location > div h2 {
@@ -261,7 +291,6 @@ body #section {
 		section#location #map {
 			width: 100%;
 			height: 400px;
-			box-shadow: 2px 2px 5px #A92C05;
 		}
 		section#location #description-map {
 			text-align: left;
@@ -274,15 +303,23 @@ body #section {
 			section#location #description-map button {
 				background: #FBE9E7;
 				border: none;
-				border-radius: 2px;
 				cursor: pointer;
+				color: #E64A19;
 				outline: none;
-				padding: 0.8em;
-				font-weight: 600;
+				padding: 1.2em;
+				font-weight: 700;
 				position: absolute;
 				right: 0;
 				top: 3px;
+				-webkit-transition: all 0.4s ease;
+				-o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
 			}
+				section#location #description-map button:hover {
+					background: #DD2C00;
+					color: #fff;
+				}
+			/*  */
 	footer#footer {
 		background: #FBE9E7;
 		padding: 4em 0;
@@ -599,3 +636,44 @@ body #section {
 				font-weight: 300;
 				color: #555;
 			}
+
+
+
+
+#RouteMap {
+	padding: 5% 20%;
+	text-align: center;
+}
+#RouteMap #map-modal {
+	border: 3px solid #BDBDBD;
+	height: 300px;
+	margin: 0 auto;
+	width: 80%;
+}
+#RouteMap .close {
+	color: #F44336;
+}
+#RouteMap button{
+	background: #FF5722;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 1em;
+	outline: none;
+	padding: 0.8em;
+}
+#RouteMap h2 {
+	color: #795548;
+	font-size: 2em;
+}
+#RouteMap p {
+	font-size: 0.9em;
+	color:#555;
+}
+#RouteMap h2, #RouteMap p{
+	margin: 0;
+}
+#RouteMap #information-map {
+	margin: 2em 0 1em 0;
+}

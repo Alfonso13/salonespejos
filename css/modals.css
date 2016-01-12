@@ -1,0 +1,181 @@
+section.modal div.modal-container {
+  background: #F1F1F2;
+  box-shadow: 1px 3px 15px #333;
+  height: 500px;
+  position: relative;
+  overflow: auto;
+}
+
+section.modal div.modal-container a.close {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  right: 0.8em;
+  top: 0.6em;
+  font-size: 1.2em;
+  z-index: 9999;
+}  
+section.modal {
+  position: fixed;
+  z-index: 9999;
+  -webkit-box-sizing: border-box;
+  background: rgba(0,0,0,0.65);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s ease; 
+}
+
+section.modal div.modal-container #cotizacion {
+  margin-top: 1em;
+}
+section.modal div.modal-container #titulo_cotizacion h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+}
+section.modal div.modal-container form > div {
+  display: inline-block;
+  text-align: center;
+  width: 90%;
+}
+section.modal div.modal-container form div > fieldset {
+  margin: 0;
+  padding: 0.5em 0;
+  position: relative;
+}
+section.modal div.modal-container form fieldset textarea + p {
+  color: inherit;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 9px !important;
+}
+section.modal div.modal-container form fieldset textarea {
+  border-radius: 3px;
+  border: 1px solid #E2E2E2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em !important;
+  resize: none;
+  width: 100%;
+}
+section.modal div.modal-container form div > fieldset input, section.modal div.modal-container form div > fieldset label {
+  display: block !important;
+  text-align: left;
+}
+section.modal div.modal-container form #container-form-service fieldset input {
+  font-size: 0.9em;
+  padding: 0.7em;
+  width: 100%;
+}
+section.modal div.modal-container form fieldset label {
+  font-size: 1em;
+  font-weight: 300 !important;
+}
+section.modal div.modal-container form .container-buttons {
+  margin: 0.4em 0 !important;
+  padding: 0.4em;
+}
+#selection-services {
+  margin-top: 1em;
+}
+#selection-services ul li {
+  cursor: pointer;
+  display: inline-block;
+}
+
+#selection-services ul li label {
+  font-weight: 300;
+}
+section.modal div.modal-container form fieldset input, section.modal div.modal-container form fieldset textarea {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #E2E2E2;
+  display: inline-block !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+#selection-services ul li span{
+  border-bottom: 2px solid;
+  text-decoration: none;
+  color: #3C515A;
+  cursor: pointer;
+  margin: 0 0.5em;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.no-visibility {
+  opacity: 0;
+  visibility: hidden;
+}
+.visibility {
+    opacity: 1;
+    visibility: visible;
+}
+
+.selectedService {}
+  .selectedService span {
+    color: #515151 !important;
+    border-bottom: 5px solid #4DB6AC !important;
+    font-weight: 700;
+  }
+  .selectedService label {    
+    font-weight: 500 !important;
+  }
+
+
+section.modal#ModalBeneficios div.modal-container {
+  background: #FFF;
+}
+  section.modal#ModalBeneficios div.modal-container #container-title-benefits {
+    margin-bottom: 1.5em;
+  }
+    section.modal#ModalBeneficios div.modal-container #container-title-benefits h2{
+      color: #fff;
+      background: #11BBAB; 
+      padding: 1em;
+      margin: 0;
+    }
+    section.modal#ModalBeneficios div.modal-container .description-services {
+      display: inline-block;
+      width: 50%;
+    }
+      section.modal#ModalBeneficios div.modal-container .description-services > *:not(p) {
+        text-align: left;
+      }
+      section.modal#ModalBeneficios div.modal-container .description-services ul {
+        list-style: inherit;
+        margin-left: 1em;
+        font-weight: 300;
+        color: #333;
+      }
+      section.modal#ModalBeneficios div.modal-container .description-services p {
+        color: #444;
+        margin-top: 2em;
+      }
+        section.modal#ModalBeneficios div.modal-container .description-services strong {
+          font-weight: 500;
+        }
+
+.container-success-message, .container-error-message {
+  margin: 1em 0;
+  opacity: 0;
+  width: 100% !important;
+}
+
+.container-success-message p, .container-error-message p {
+  font-weight: 300;
+}
+
+.container-success-message .icon-checkmark, .container-error-message .icon-sad {
+  color: #11BBAB;
+}
+ 
+.container-error-message .icon-sad, .container-success-message .icon-checkmark {
+  font-size: 3em;
+}
